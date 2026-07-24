@@ -1,0 +1,1 @@
+console.log('welcome to Java Script by apna college!!');
