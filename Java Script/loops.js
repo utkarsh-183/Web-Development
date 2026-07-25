@@ -52,17 +52,56 @@
 // }
 
 
-let gameNum = Math.floor(Math.random()*100 ) + 1;
-let userNum = Number(prompt("Guess the game Number : "));
-while(userNum !== gameNum){
-    if(userNum<gameNum){
-        userNum = Number(prompt("number is low"));
-    }
-    else {
-        userNum = Number(prompt("Number is high"));
-    }
+// let gameNum = Math.floor(Math.random()*100 ) + 1;
+// let userNum = Number(prompt("Guess the game Number : "));
+// while(userNum !== gameNum){
+//     if(userNum<gameNum){
+//         userNum = Number(prompt("number is low"));
+//     }
+//     else {
+//         userNum = Number(prompt("Number is high"));
+//     }
 
-    // userNum = Number(prompt("Wrong! Guess again"))
-}
+//     // userNum = Number(prompt("Wrong! Guess again"))
+// }
 
-console.log("Congratulations, you entered the right Number!!!!");   
+// console.log("Congratulations, you entered the right Number!!!!");   
+
+// string
+
+// let str = "Utkarsh";
+// let str2 = 'Tiwari'
+
+// Template literals
+
+// let specialString = `this is a template literal`;
+// console.log(specialString);
+// console.log(typeof(specialString))
+
+let obj = {
+    item : "pen",
+    cost : 4,
+};
+
+// console.log("The cost of", obj.item,"is",obj.cost);
+
+// let output = `The cost of ${obj.item} is ${obj.cost} rupees`
+// console.log(`out \n put`);
+
+// let str = "utkarsh tiwari";
+// let newStr = str.toUpperCase();
+// console.log(newStr);
+
+// let s = "ANJALI TRIPATHI";
+// let newS = s.toLowerCase();
+// console.log(newS);
+
+// let str = "Hello"
+// console.log(str.replace("H","M"));
+
+// let str = "ILOVETECH";
+// console.log(str.charAt(3));
+
+let fullName = prompt("Enter your full name without spaces");
+let userName = '@' + fullName + fullName.length;
+console.log(userName);
