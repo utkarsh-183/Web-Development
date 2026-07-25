@@ -39,14 +39,30 @@
 // console.log(size);
 
 // number guessing
-let gameNum = Math.floor(Math.random()*100)+1;
-console.log(gameNum);
-let num = Number(prompt("Enter the number b/w 1 and 100 :"));
-if(num<gameNum){
-    console.log("number is low");
-}else if(num===gameNum){
-    console.log("Number matched");
+// let gameNum = Math.floor(Math.random()*100)+1;
+// console.log(gameNum);
+// let num = Number(prompt("Enter the number b/w 1 and 100 :"));
+// if(num<gameNum){
+//     console.log("number is low");
+// }else if(num===gameNum){
+//     console.log("Number matched");
+// }
+//  else {
+//     console.log("Number is high")
+// }
+
+
+let gameNum = Math.floor(Math.random()*100 ) + 1;
+let userNum = Number(prompt("Guess the game Number : "));
+while(userNum !== gameNum){
+    if(userNum<gameNum){
+        userNum = Number(prompt("number is low"));
+    }
+    else {
+        userNum = Number(prompt("Number is high"));
+    }
+
+    // userNum = Number(prompt("Wrong! Guess again"))
 }
- else {
-    console.log("Number is high")
-}
+
+console.log("Congratulations, you entered the right Number!!!!");   
