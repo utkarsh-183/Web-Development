@@ -14,12 +14,17 @@
 
 // h2.innerText = h2.innerText + " From Apna College!!" // conactenate
 
-let divs = document.querySelectorAll(".box");
+// let divs = document.querySelectorAll(".box");
 // divs[0].innerText = "new text";
 // divs[1].innerText = "value 2";
 // divs[2].innerText = "this is value 3";
-let idx = 1;
-for(div of divs){
-    div.innerText= `this is a new line ${idx}`;
-    idx++;
-}
+// let idx = 1;
+// for(div of divs){
+//     div.innerText= `this is a new line ${idx}`;
+//     idx++;
+// }
+
+let div = document.querySelector("div")
+
+div.innerText = "this is a div";
+div.style.backgroundColor = "red";
