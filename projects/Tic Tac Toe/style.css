@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #355c7d, #548687);
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Winner Message Section */
+.msg-container {
+    height: 30vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 6vmin;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Main Game Container */
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Tic Tac Toe Board */
+.game {
+    height: 60vmin;
+    width: 60vmin;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1.5vmin;
+}
+
+/* Individual Boxes */
+.box {
+    height: 18vmin;
+    width: 18vmin;
+
+    border-radius: 1rem;
+    border: none;
+
+    background-color: #ffffc7;
+    color: #b0413e;
+
+    font-size: 8vmin;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease,
+                background-color 0.2s ease;
+}
+
+/* Box Hover Effect */
+.box:hover:not(:disabled) {
+    transform: scale(1.05);
+    background-color: #fffda8;
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Click Effect */
+.box:active:not(:disabled) {
+    transform: scale(0.95);
+}
+
+/* Disabled boxes */
+.box:disabled {
+    cursor: default;
+}
+
+/* Buttons */
+#reset-button,
+#new-btn {
+    padding: 12px 25px;
+
+    font-size: 1.1rem;
+    font-weight: bold;
+
+    background-color: #222;
+    color: white;
+
+    border-radius: 10px;
+    border: none;
+
+    cursor: pointer;
+
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+
+    transition: all 0.2s ease;
+}
+
+/* Button Hover */
+#reset-button:hover,
+#new-btn:hover {
+    background-color: #ffffc7;
+    color: #333;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Button Click */
+#reset-button:active,
+#new-btn:active {
+    transform: scale(0.95);
+}
+
+/* Hide Winner Section */
+.hide {
+    display: none;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+
+    .game {
+        height: 85vmin;
+        width: 85vmin;
+        gap: 2vmin;
+    }
+
+    .box {
+        height: 26vmin;
+        width: 26vmin;
+        font-size: 12vmin;
+    }
+
+    #msg {
+        font-size: 8vmin;
+    }
+
+    .container {
+        height: 65vh;
+    }
+}
