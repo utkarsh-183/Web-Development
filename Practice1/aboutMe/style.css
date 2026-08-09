@@ -1,0 +1,51 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #221f1f;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+section {
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    background-color: white;
+    border-radius: 8px;
+}
+
+.skills ul {
+    list-style: none;
+}
+
+.skills li {
+    background: #c48f8f;
+    display: inline-block;
+    padding: 8px 15px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+
+.project-box {
+    background-color: #fafafa;
+    padding: 15px;
+    border-left: 4px solid #333;
+}
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #222;
+    color: white;
+}
