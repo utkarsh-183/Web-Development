@@ -1,0 +1,9 @@
+body{
+    background-color: lightslategray;
+    border: 6px dotted rgb(0, 0, 0);
+    td{
+        border: 4px solid black;
+    }
+}
+
+
