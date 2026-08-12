@@ -1,0 +1,38 @@
+
+.container{
+    display: flex;
+    /* flex-direction: column; */
+    /* flex-direction: row-reverse; */
+    background-color: rgba(253, 140, 255, 0.344);
+    height: 500px;
+    width: 1000px;
+    border: 2px solid plum;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    align-items: baseline;
+    gap: 20px;
+    align-content: center;
+     column-gap : 10px ;
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: brown;
+    border: 2px solid black;
+    color: white;
+    text-align: center;
+    align-content: center;
+    flex-grow: 1;
+    flex-flow: 1;
+    flex-shrink: initial;
+    /* order of child is 0 by default */
+
+}
+.item2{
+    /* order: -1; */
+    flex-grow: 2;
+    align-self: flex-end;
+}
