@@ -1,9 +1,26 @@
 body{
-    background-color: lightslategray;
-    border: 6px dotted rgb(0, 0, 0);
-    td{
-        border: 4px solid black;
-    }
+    background-color:beige;
+    border: 4px solid black;
+    border-style:dashed;
 }
-
-
+div1{
+    border: 2px solid black;
+}
+div2{
+    border: 2px solid black;
+}
+div3{
+    border: 4px dotted black;
+    background-color: antiquewhite;
+}
+div4{
+    border: 2px solid black;
+    background-color: aqua;
+}
+div5{
+    border: 2px solid black;
+    background-color: aqua;
+}
+h4{
+    text-decoration: underline; 
+}
